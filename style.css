@@ -1,0 +1,44 @@
+h{
+    color: blue;
+    font-size: 40pt;
+    border-bottom: 1px solid gray;
+ /* border-top: 1px dotted pink;
+    border-right: 1px solid green;
+    border-left: 1px solid blue; */
+}
+
+p{
+    color:red;
+    font-size: 16px;
+    font-family: Verdana;
+    line-height: 1.4;
+    text-align: left;
+    text-indent: 32px;
+    letter-spacing: 0.2px;
+}
+
+
+a{
+    color: brown;
+}
+a:hover{
+    color: blue;
+    font-size: 20px;
+}
+
+.textTurnPink{
+    color: pink;
+}
+
+.textTurnGreen{
+    color: green;
+}
+
+.textBiger{
+font-size: 28px;
+}
+
+ul{
+    color:blueviolet
+}
+
