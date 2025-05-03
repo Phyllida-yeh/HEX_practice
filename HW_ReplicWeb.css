@@ -23,3 +23,7 @@ p {
     color: black;
     text-indent: 32px;
 }
+
+.bordered-image {
+    border: 5px solid orange;
+}
