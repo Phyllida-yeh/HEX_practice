@@ -56,3 +56,17 @@ h1{
     color: red; /* 設定字體顏色為紅色 */
     font-size: 30px; /* 設定字體大小為 30 像素 */
 }
+span{
+	color:red; /* 設定字體顏色為藍色 */
+	font-size: 22px; /* 設定字體大小為 20 像素 */
+}
+
+a{
+	color:black; /* 設定字體顏色為藍色 */
+	font-size: 20px; /* 設定字體大小為 20 像素 */
+}
+
+a:hover{
+	color:blue; /* 設定字體顏色為藍色 */
+	font-size: 20px; /* 設定字體大小為 20 像素 */
+}
