@@ -62,11 +62,21 @@ span{
 }
 
 a{
-	color:black; /* 設定字體顏色為藍色 */
-	font-size: 20px; /* 設定字體大小為 20 像素 */
+	color:black; 
+	font-size: 20px; 
 }
 
 a:hover{
+	color:blue;; 
+	font-size: 20px; 
+}
+
+a.turnRed{
+	color:red; /* 設定字體顏色為紅色 */
+	font-size: 20px; /* 設定字體大小為 20 像素 */
+}
+a.turnblue{
 	color:blue; /* 設定字體顏色為藍色 */
 	font-size: 20px; /* 設定字體大小為 20 像素 */
 }
+	
