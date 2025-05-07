@@ -49,3 +49,61 @@ table {
 /* End of reset CSS */
 /* CSS for the assignment 2 page */
 
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+.wrap{
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	width: 720px;
+	
+}
+.header{
+	background-color : transparent;
+	padding: 20px;
+	border-left: 2px solid gray;
+	border-right: 2px solid gray;
+	border-top: 2px solid gray;
+}
+
+.header img{
+	width: 200px;
+	max-width: 100%
+}
+
+.content{
+	background-color:transparent;
+	padding: 20px;
+	
+	border-top: 2px solid rgb(149, 27, 27);
+	border-left: 2px solid rgb(149, 27, 27);
+	border-right: 2px solid rgb(149, 27, 27);
+	border-bottom: 2px solid rgb(149, 27, 27);
+}
+
+.content p{
+	color: blue;
+	margin-bottom: 30px;
+}
+.content a{
+	display: inline-block;
+	color: white;
+	background-color: blue;
+	text-decoration: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+.content a:hover{
+	color: blue;
+	background-color: gray;
+}
+
+.footer{
+	color: black;
+	background-color:pink;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
