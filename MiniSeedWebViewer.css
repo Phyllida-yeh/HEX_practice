@@ -49,27 +49,50 @@ table {
 /* end of reset.css */
 /* CSS for the lecture */
 .wrap {
-    width: 500px;
+    width: 1024px;
     margin: 0 auto;
-  
 }
-
 
 .header {
     background-color:gray;
-    
- 
 }
 
 .content {
     background-color: white;
-    margin-bottom: 10px;
-  
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
 }
+
+.course{
+	display: flex;
+	justify-content: space-around ;
+	
+}
+.course_item{
+	padding: 20px;
+	border: 1px solid black;
+	width: 300px;
+	line-height: 1.6;
+	text-align: justify;
+}
+.course_item h2{
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 25px;
+}
+.course_item ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: disc;
+	padding-left: 1.5em;
+  }
+ 
+
 .footer {
+	color: white;
     background-color: gray;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px;
 
 }
