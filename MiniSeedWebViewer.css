@@ -57,24 +57,28 @@ table {
     background-color:gray;
 }
 
+.banner {
+	display: flex;
+	justify-content: center;
+}
+
 .content {
     background-color: white;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	
 }
 
 .course{
 	display: flex;
-	justify-content: space-around ;
+	justify-content: space-around;
 	
 }
 .course_item{
-	padding: 20px;
+	padding: 10px;
 	border: 1px solid black;
 	width: 300px;
 	line-height: 1.6;
-	text-align: justify;
 }
 .course_item h2{
 	margin-bottom: 10px;
@@ -87,6 +91,9 @@ table {
 	list-style: disc;
 	padding-left: 1.5em;
   }
+.boxshadow {
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
  
 
 .footer {
