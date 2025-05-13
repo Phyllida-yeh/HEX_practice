@@ -107,8 +107,8 @@ table {
 .section_file_upload,
 .section_file_trace {
     width: 500px;
-    height: 100px;
     margin: 10px;
+    padding: 10px;
     background-color: #bedce9;
 }
 
@@ -120,7 +120,12 @@ table {
     gap: 10px;
     
   }
-  
+  .section_file_upload p {
+    align-self: flex-start;
+    font-size: 20px;
+    color: black;
+  }
+
   input[type="file"] {
     padding: 10px;
     font-size: 14px;
@@ -137,7 +142,7 @@ table {
     color: white;
     background-color: #3d413d;
   }
-  
+
 .section_plot{height: 100px;}
 .section_ftt{height: 100px;}
 .footer{

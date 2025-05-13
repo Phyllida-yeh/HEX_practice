@@ -110,18 +110,18 @@ table {
 	justify-content: space-around;
 	
 }
-.course_item{
+.course li{
 	padding: 10px;
 	/* border: 1px solid black; */
 	width: 300px;
 	line-height: 1.6;
 }
-.course_item h2{
+.course li h2{
 	margin-bottom: 10px;
 	text-align: center;
 	font-size: 25px;
 }
-.course_item ul {
+.course li ul {
 	display: flex;
 	justify-content: space-around;
 	list-style: disc;
@@ -130,7 +130,6 @@ table {
 .boxshadow {
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
- 
 
 .footer {
 	color: white;
