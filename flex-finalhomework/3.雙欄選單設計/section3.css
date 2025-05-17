@@ -1,0 +1,124 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of reset.css */
+/* css for Section1 */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* *{
+	outline: 1px solid gray;
+} */
+
+.layout {
+	width: 1276px;
+	height: auto;
+	margin: 0 auto;
+	background: rgba(128, 128, 128, 0.152);
+	padding: 100px 87px 100px 89px;
+}
+
+.wrap {
+	display: flex;
+}
+
+.sidebar{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 64px 13px 0px 13px;
+	background: #EAF0ED;
+	
+}
+.sidebar img{
+	width: 298px;
+	height: auto;
+	margin-bottom: 16px;
+}
+
+.sidebar ul{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	color: #3F5D45;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 140%;
+	letter-spacing: 0%;
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+	gap:16px ;
+	padding: 64px 84px 12px 84px;
+	background: #FFFFFF;
+}
+.content h2{
+	color: #3F5D45;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 120%;
+
+}
+.content p{
+	color: #000000;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 140%;
+
+}
+.content_pic{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap:8px;
+}
+img{ 
+	display: block;
+}

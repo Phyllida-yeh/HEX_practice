@@ -1,0 +1,29 @@
+
+大多數瀏覽器的預設 box-sizing 是
+box-sizing: content-box;
+這表示：
+width 和 height 只包含內容本身。
+邊框border和內距padding會另外加上去。
+
+div {
+    width: 100px;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+實際佔據的寬度會變成 100 + 10*2 + 5*2 = 130px。
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+這會讓所有元素（包括偽元素 ::before 和 ::after）都變成：
+
+width 和 height 包含 內容 + padding + border。
+
+這樣寫上去的寬度就比較容易預測：
+div {
+    width: 100px;
+    padding: 10px;
+    border: 5px solid black;
+  }
+  實際寬度就是 100px，系統會自動在 100px 裡面安排內容、padding 和 border。

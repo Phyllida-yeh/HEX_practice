@@ -1,0 +1,54 @@
+/* end of reset.css */
+/* css for Section1 */
+*{
+	outline: 1px solid gray;
+}
+.section {
+    width: 1164px;
+    height: 539px;
+    margin: 0 auto;
+    background: rgba(128, 128, 128, 0.432);
+    padding: 109px 119px 111px 104px;
+}
+.section ul {
+    display: flex;
+    justify-content:space-between;
+    gap: 24px;
+}
+.section li{
+    width: 372%;
+    height: 539%;
+}
+
+
+.section h2{
+    font-size: 70px;
+    font-weight: 400;
+    color: #3F5D45;
+    padding: 84px 72px 84px 72px;
+    text-align: center;
+    background: #EAF0ED;
+}
+
+.card_list{
+    background:#3F5D45;
+    
+}
+
+.card_list_content {
+    background:#FFFFFF;
+    padding: 52.5px 40px;
+}
+.card_list_content h3 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #3F5D45;
+}
+
+.card_list_content p {
+    font-size: 22px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
