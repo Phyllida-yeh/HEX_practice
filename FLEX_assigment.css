@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* end of reset.css */
+/* css for Section1 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* *{
+	outline: 1px solid gray;
+} */
+
+.layout {
+    width: 1500px;
+    background: #FBFBFB;
+    padding: 100px 87px 100px 89px;
+    margin: 0 auto;
+}
+
+.articalList {
+    margin: 0 auto;
+    width: 1296px;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px 0px;
+    background: #FBFBFB;
+}
+
+.card {
+    width: 416px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cardContent {
+    font-family: Noto Sans TC;
+}
+
+.cardContent time {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.cardContent_hashtag a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #0027D5;
+}
+
+.cardContent ul {
+    display: flex;
+}
+
+.cardContent h3 {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0%;
+    line-height: 150%;
+    margin-bottom: 8px;
+}
+
+.cardContent p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #4B4B4B;
+}
+
+.cardContent_hashtag a.PopularArtical {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background: #0027d5;
+    border-radius: 40px;
+    padding: 6px 12px;
+    margin-left: 20px; 
+
+}
+
+.LinkToArtical {
+    display: inline-block;
+    align-self: start;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #4B4B4B;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #4B4B4B;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
