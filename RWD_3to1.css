@@ -146,12 +146,6 @@ table {
     outline: 1px solid gray;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 .wrap{
     max-width: 1000px;
     margin: 0 auto;
