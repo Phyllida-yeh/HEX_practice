@@ -27,3 +27,22 @@ div {
     border: 5px solid black;
   }
   實際寬度就是 100px，系統會自動在 100px 裡面安排內容、padding 和 border。
+
+
+
+  https://www.figma.com/design/F8DEsm2VfyCdq5owneN4MW/HTML-%E8%AA%B2%E7%A8%8B---Flex-%E4%BD%9C%E6%A5%AD%EF%BC%88%E5%85%AC%E9%96%8B%E7%89%88%EF%BC%89?node-id=1-326&t=R4yeWzvK9m6Ti1TF-0
+
+
+
+    final Assignment
+    https://www.figma.com/design/bBHUp0TeM0yjAlkjtyxQJI/2025ver.-%E9%AB%94%E9%A9%97%E7%87%9F%E5%AD%B8%E7%94%9F%E8%A8%AD%E8%A8%88%E7%A8%BF?node-id=236-1109&t=l0RsJOs8y6VjzDTT-0
+    
+  HTML img 下方有不明空隙？！
+  https://tzuhui.io/2020/01/08/HTML/html-img-blank/
+
+
+解法二：
+將 img 改為區塊元素，讓圖片不會因為行內（inline）元素的特性而受到影響。
+  img { 
+  display: block;
+}

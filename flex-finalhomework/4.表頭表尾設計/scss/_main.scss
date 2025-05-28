@@ -1,0 +1,85 @@
+/* css for Section1 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* * {
+    outline: 1px solid gray;
+} */
+
+.wrap {
+    max-width: 1278px;
+    margin: 0 auto;
+    font-family: PingFang TC;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 48px;
+    background: #EAF0ED;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & a {
+        text-decoration: none;
+        color: #3F5D45;
+        font-family: PingFang TC;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: 0%;
+        padding: 20px 0;
+    }
+
+}
+
+.main {
+    padding: 80PX 355px;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    line-height: 140%;
+    letter-spacing: 0%;
+
+    & h3 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    & p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+}
+
+
+.footer {
+    background: #3F5D45;
+    padding: 16px;
+
+    & ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    & a {
+        text-decoration: none;
+        padding: 15px;
+        color: #FFFFFF;
+    }
+
+}
+
+

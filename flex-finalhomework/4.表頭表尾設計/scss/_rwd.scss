@@ -1,0 +1,36 @@
+
+@media (max-width: 768px) {
+    .header {
+        justify-content:center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .main {
+        padding: 50px 34px;
+    }
+
+    .footer ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+@media (max-width: 1190px) {
+
+    .main {
+        padding: 30px 40px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .header {
+        justify-content:center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .main {
+        padding: 50px 34px;
+    }
+
+}

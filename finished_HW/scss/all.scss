@@ -1,0 +1,70 @@
+$background-color: #000000;
+$font-m: 16px;
+$font-l: $font-m*2;
+
+.header {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../asset/img/header_desktop.png);
+    background-repeat: no-repeat;
+
+    .banner {
+        min-height: 420px;
+        font-size: $font-l;
+
+        &-title {
+            max-width: 460px;
+            background: $background-color;
+            color: #fff;
+        }
+    }
+
+    .menu {
+        top: 0;
+        font-size: $font-m;
+
+        &-bg {
+            min-height: 58px;
+            background: $background-color;
+            position: relative;
+        }
+
+        ul {
+            a {
+                display: block;
+
+                &:hover {
+                    font-weight: bolder;
+                }
+            }
+
+            li {
+                color: #fff;
+            }
+        }
+
+        &-show {
+            max-height: 165px;
+        }
+    }
+
+}
+
+.main-menu {
+    background: $background-color;
+    overflow: hidden;
+
+    &a:hover {
+        background: $background-color;
+    }
+}
+
+.hamburger-menu {
+    display: block;
+    float: right;
+}
+
+
+.block-md {
+    display: block;
+}
