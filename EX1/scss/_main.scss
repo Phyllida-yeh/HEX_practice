@@ -1,0 +1,27 @@
+.comments {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(128, 128, 128, 0.202);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment{
+    padding: 10px;
+    // border: 1px solid black;
+}
+
+.comment-yellow {
+    background-color: rgba(255, 166, 0, 0.549);
+}
+
+// 偽元素(不存在html中)
+
+// 「對所有 .comment 元素，如果裡面有 .special，就在它的開頭加上 📌 這個釘圖案。」
+
+.comments:has(.special)::before{
+    content:"🔴";
+    font-weight: bold;
+}
