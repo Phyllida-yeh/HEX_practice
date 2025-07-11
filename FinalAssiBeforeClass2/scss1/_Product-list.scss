@@ -1,0 +1,132 @@
+
+.container-1 {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.col-1 {
+    width: calc(100%/12*1);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-2 {
+    width: calc(100%/12*2);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-3 {
+    width: calc(100%/12*3);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-4 {
+    width: calc(100%/12*4);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-5 {
+    width: calc(100%/12*5);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-6 {
+    width: calc(100%/12*6);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-7 {
+    width: calc(100%/12*7);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-8 {
+    width: calc(100%/12*8);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-9 {
+    width: calc(100%/12*9);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-10 {
+    width: calc(100%/12*10);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-11 {
+    width: calc(100%/12*11);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-12 {
+    width: calc(100%);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+
+/*元件*/
+
+.Product-List .bi {
+    padding-right: 0px;
+}
+
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '/';
+    padding: 0 12px;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-dark{
+    background-color: var(--color-Neutral-900);
+    color: var(--color-Neutral-0);
+}
+
+.btn-light{
+    border: 1px solid var(--color-Neutral-900);
+}
+
+.page-item .btn {
+    padding: 8px 15px;
+    font-weight: 400;
+}
+
+.page-item .active{
+    background-color: var(--color-primary-300);
+    font-weight: 500;
+}
+
+.side-bar-title a.active,
+.side-bar-title a:hover{
+    color: var(--color-primary-400);
+}

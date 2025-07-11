@@ -1,0 +1,90 @@
+:root {
+    --color-primary-100: #F5FEE7;
+    --color-primary-200: #E8FEC5;
+    --color-primary-300: #C0FA73;
+    --color-primary-400: #57A203;
+    --color-primary-500: #477A11;
+
+    --color-Neutral-0: #FFFFFF;
+    --color-Neutral-100: #F8F9FA;
+    --color-Neutral-200: #E9ECEF;
+    --color-Neutral-300: #DEE2E6;
+    --color-Neutral-400: #CED4DA;
+    --color-Neutral-500: #ADB5BD;
+    --color-Neutral-600: #6C757D;
+    --color-Neutral-700: #495057;
+    --color-Neutral-800: #343A40;
+    --color-Neutral-900: #212529;
+
+    --color-Danger-100: #FCF1F1;
+    --color-Danger-200: #EBA7A7;
+    --color-Danger-300: #E9ECEF;
+
+    --color-Warning-100: #FEF6EC;
+    --color-Warning-200: #F9C588;
+    --color-Warning-300: #F38B12;
+
+}
+
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+
+.product-col-6 {
+    width: calc(100%/12*6);
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+// product descripe
+.del-price {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-Neutral-500);
+    padding-left: 8px;
+    ;
+}
+
+//product color
+.product-color {
+    width: 64px;
+    text-align: center;
+    color: var(--color-Neutral-600);
+}
+
+//product size{
+
+.btn-product-size {
+    border: 1px solid var(--color-Neutral-300);
+    width: 160px;
+}
+
+.btn-product-size.active,
+.btn-product-size:hover {
+    border: 1px solid var(--color-Neutral-900);
+}
+
+//product favorited reservation
+
+.product-fav-rev .btn {
+    width: 50%;
+}
+
+//product information
+.product-info-title {
+    font-weight: 500;
+}
+
+
+
+.product-info-item p{
+    color: var(--color-Neutral-600);
+}
+
+.product-info-item{
+    border-bottom: var(--color-Neutral-300) 1px solid;
+}

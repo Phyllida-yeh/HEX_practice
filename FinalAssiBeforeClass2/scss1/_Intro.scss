@@ -1,0 +1,72 @@
+//區域設定
+/*Intro樣式*/
+
+.header {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 152px 0;
+    text-align: center;
+}
+
+.quote {
+    text-align: center;
+    border-radius: 12px;
+}
+
+.intro img {
+    width: 1076px;
+    margin-left: -110px;
+    margin-right: -110px;
+}
+
+.SectionButtonLine {
+    border-bottom: 1px solid var(--color-Neutral-300);
+}
+
+.HistoryDesc {
+    border-left: 1px solid var(--color-Neutral-900);
+    padding-left: 8px;
+    line-height: 1.5;
+}
+
+.HitstoryListStyle {
+    list-style-type: disc;
+    padding-left: 24px;
+}
+
+.PhilosoDesc {
+    border-left: 3px solid var(--color-Neutral-300);
+    padding-left: 12px;
+    line-height: 1.5;
+}
+
+.bi {
+    padding-right: 8px;
+    // vertical-align: bottom;
+}
+
+// a.StoryDesc {
+//     padding-top: 8px;
+//     padding-bottom: 8px;
+// }
+
+/*.story a:hover{在 .story 裡面的 a 做 hover}*/
+/*a.StoryDesc:hover {這個 a 標籤自己就有 class="story" 在這裡做hover}*/
+a.StoryDesc:hover {
+display: inline-block;
+color: var(--color-primary-500);
+background-color: var(--color-Neutral-400);
+}
+
+
+.StoryUnderLine {
+    display: inline-block;
+    border-bottom: 1px solid var(--color-primary-400);
+    padding-bottom: 4px;
+}
+
+.footer {
+    text-align: center;
+}
