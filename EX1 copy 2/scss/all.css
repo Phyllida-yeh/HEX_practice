@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end of reset.css */
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.flex {
+  flex-direction: column;
+}
+
+:root {
+  --color-primary-100: #F5FEE7;
+  --color-primary-200: #E8FEC5;
+  --color-primary-300: #C0FA73;
+  --color-primary-400: #57A203;
+  --color-primary-500: #477A11;
+  --color-Neutral-0: #FFFFFF;
+  --color-Neutral-100: #F8F9FA;
+  --color-Neutral-200: #E9ECEF;
+  --color-Neutral-300: #DEE2E6;
+  --color-Neutral-400: #CED4DA;
+  --color-Neutral-500: #ADB5BD;
+  --color-Neutral-600: #6C757D;
+  --color-Neutral-700: #495057;
+  --color-Neutral-800: #343A40;
+  --color-Neutral-900: #212529;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.brand-story a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.wrap {
+  max-width: 53rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-bottom: var(--color-Neutral-300) 1px solid;
+  padding-bottom: 3rem;
+}
+
+.card-text,
+.card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.brand-history-dot ol {
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+.brand-history-item time {
+  padding-right: 0.5rem;
+}
+.brand-history-item p {
+  border-left: var(--color-Neutral-900) 1px solid;
+  padding-left: 0.5rem;
+}
+
+.brand-philosophy p {
+  border-left: var(--color-Neutral-300) 3px solid;
+  padding-left: 0.5rem;
+}
+
+.brand-story a {
+  color: var(--color-primary-400);
+  border-bottom: 1px solid var(--color-primary-400);
+  padding-bottom: 4px;
+}
+
+.hightlight {
+  color: var(--color-primary-400);
+}/*# sourceMappingURL=all.css.map */

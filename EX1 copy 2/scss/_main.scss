@@ -1,0 +1,108 @@
+:root {
+    --color-primary-100: #F5FEE7;
+    --color-primary-200: #E8FEC5;
+    --color-primary-300: #C0FA73;
+    --color-primary-400: #57A203;
+    --color-primary-500: #477A11;
+
+    --color-Neutral-0: #FFFFFF;
+    --color-Neutral-100: #F8F9FA;
+    --color-Neutral-200: #E9ECEF;
+    --color-Neutral-300: #DEE2E6;
+    --color-Neutral-400: #CED4DA;
+    --color-Neutral-500: #ADB5BD;
+    --color-Neutral-600: #6C757D;
+    --color-Neutral-700: #495057;
+    --color-Neutral-800: #343A40;
+    --color-Neutral-900: #212529;
+}
+
+@mixin h-style ($font-size, $font-weight: 700, $line-height: 1.2) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+h1 {    @include h-style(40px);}
+h2 {    @include h-style(32px);}
+h3 {    @include h-style(28px);}
+h4 {    @include h-style(24px);}
+h5 {    @include h-style(20px);}
+p {    @include h-style(16px, 400, 1.5);}
+.brand-story a {    @include h-style(16px, 500, 1.5);}
+
+
+@mixin flex-col($gap: 0) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.wrap {
+    max-width: 53rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem; //64px
+    @include flex-col(3rem); // 48px
+}
+
+.flex {
+    display: flex;
+}
+
+.card {
+    @include flex-col(1.5rem); // 24px
+    border-bottom: var(--color-Neutral-300) 1px solid;
+    padding-bottom: 3rem;
+}
+
+.card-text,
+.card-link {
+    @include flex-col(1rem); // 16px
+}
+
+.card-list {
+    @include flex-col(0.75rem) //12px
+}
+
+.brand-history-dot ol {
+    list-style: disc;
+    margin-left: 1rem;
+}
+
+.brand-history-item {
+
+    time {
+        padding-right: 0.5rem;
+    }
+
+    p {
+        border-left: var(--color-Neutral-900) 1px solid;
+        padding-left: 0.5rem;
+    }
+}
+
+.brand-philosophy {
+    p {
+        border-left: var(--color-Neutral-300) 3px solid;
+        padding-left: 0.5rem;
+    }
+}
+
+.brand-story a {
+    color: var(--color-primary-400);
+    border-bottom: 1px solid var(--color-primary-400);
+    padding-bottom: 4px;
+}
+
+.hightlight {
+    color: var(--color-primary-400);
+}

@@ -1,6 +1,5 @@
 .comments {
     max-width: 900px;
-    margin: 0 auto;
     padding: 20px;
     background: rgba(128, 128, 128, 0.202);
     display: flex;
@@ -10,6 +9,7 @@
 
 .comment{
     padding: 10px;
+    display: flex;
     // border: 1px solid black;
 }
 
@@ -21,7 +21,19 @@
 
 // 「對所有 .comment 元素，如果裡面有 .special，就在它的開頭加上 📌 這個釘圖案。」
 
-.comments:has(.special)::before{
-    content:"🔴";
-    font-weight: bold;
+.comments:has(.special){
+    background: rgba(0, 0, 255, 0.173);
 }
+
+.comment:has(:checked){
+    background: rgba(0, 255, 0, 0.173);
+}
+
+
+// .special::before {
+//     content: "📌";
+// }
+
+// .special {
+//     font-weight: bold;
+// }
