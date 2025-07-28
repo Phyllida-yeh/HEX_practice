@@ -1,0 +1,61 @@
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+
+.product-col-6 {
+    width: calc(100%/12*6);
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+/* product descripe */
+.del-price {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-Neutral-500);
+    padding-left: 8px;
+    ;
+}
+
+/* product color */
+.product-color {
+    width: 64px;
+    text-align: center;
+    color: var(--color-Neutral-600);
+}
+
+/* product size */
+
+.btn-product-size {
+    border: 1px solid var(--color-Neutral-300);
+    width: 160px;
+}
+
+.btn-product-size.active,
+.btn-product-size:hover {
+    border: 1px solid var(--color-Neutral-900);
+}
+
+/* product favorited reservation */
+
+.product-fav-rev .btn {
+    width: 50%;
+}
+
+/* product information */
+.product-info-title {
+    font-weight: 500;
+}
+
+
+
+.product-info-item p{
+    color: var(--color-Neutral-600);
+}
+
+.product-info-item{
+    border-bottom: var(--color-Neutral-300) 1px solid;
+}

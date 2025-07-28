@@ -1,0 +1,855 @@
+/* 引入外部字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* Css Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* end of css reset */
+
+/* 顏色 */
+
+:root {
+    --color-primary-100: #F5FEE7;
+    --color-primary-200: #E8FEC5;
+    --color-primary-300: #C0FA73;
+    --color-primary-400: #57A203;
+    --color-primary-500: #477A11;
+
+    --color-Neutral-0: #FFFFFF;
+    --color-Neutral-100: #F8F9FA;
+    --color-Neutral-200: #E9ECEF;
+    --color-Neutral-300: #DEE2E6;
+    --color-Neutral-400: #CED4DA;
+    --color-Neutral-500: #ADB5BD;
+    --color-Neutral-600: #6C757D;
+    --color-Neutral-700: #495057;
+    --color-Neutral-800: #343A40;
+    --color-Neutral-900: #212529;
+
+    --color-Danger-100: #FCF1F1;
+    --color-Danger-200: #EBA7A7;
+    --color-Danger-300: #D74F4F;
+
+    --color-Warning-100: #FEF6EC;
+    --color-Warning-200: #F9C588;
+    --color-Warning-300: #F38B12;
+
+}
+
+/* 1.盒模型 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2.圖片 */
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 3.a標籤 */
+a {
+    /* text-underline-offset: 4px; */
+    display: block;
+    text-decoration: none;
+    color: var(--color-Neutral-900);
+
+    /* border-bottom: 1px solid blue;
+    padding-bottom: 2px; */
+}
+
+
+/* 4.文字：字體,行高,字級,字重,字距 */
+
+/* sass才有的功能 */
+/* @mixin h-style ($font-size, $font-weight: 700, $line-height: 1.2, $letter-spacing: 0.05em) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
+
+.h1 {@include h-style(40px);}
+.h2 {@include h-style(32px);}
+.h3 {@include h-style(28px);}
+.h4 {@include h-style(24px);}
+.h5 {@include h-style(20px);}
+.h6 {@include h-style(16px);}
+p {@include h-style(16px, 500, 1.5);}
+.text-sm {@include h-style(14px, 500, 1.5);} */
+
+
+
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.body {
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.text-sm {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+
+.text-neutral-white {
+    color: var(--color-Neutral-0);
+}
+
+.text-neutral-100 {
+    color: var(--color-Neutral-100);
+}
+
+.text-neutral-600 {
+    color: var(--color-Neutral-600);
+}
+
+.text-primary-400 {
+    color: var(--color-primary-400);
+}
+
+.text-danger-300 {
+    color: var(--color-Danger-300);
+}
+
+.bg-primary-100 {
+    background-color: var(--color-primary-100);
+}
+
+.bg-primary-200 {
+    background-color: var(--color-primary-200);
+}
+
+.bg-Neutral-100 {
+    background-color: var(--color-Neutral-100);
+}
+
+.Dispaly-1 {
+    font-size: 64px;
+    line-height: 1.2;
+    letter-spacing: 5em;
+}
+
+.Dispaly-2 {
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: 5em;
+}
+
+.h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+}
+
+.h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+}
+
+.h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+}
+
+.h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+}
+
+.h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+}
+
+.h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+}
+
+
+@media(max-width:767px) {
+
+    .h3-md {
+        font-size: 28px;
+    }
+
+    .h4-md {
+        font-size: 24px;
+    }
+
+    .h5-md {
+        font-size: 20px;
+    }
+
+    .h6-md {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .h3-sm {
+        font-size: 28px;
+    }
+
+    .h4-sm {
+        font-size: 24px;
+    }
+
+    .h5-sm {
+        font-size: 20px;
+    }
+
+    .h6-sm {
+        font-size: 16px;
+    }
+}
+
+
+.Label-lg {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.Label-md {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.Label-sm {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.Label-xs {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.Paragraph-lg {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.Paragraph-md {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.Paragraph-sm {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.Paragraph-xs {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.p-12 {
+    padding: 12px;
+}
+
+.p-32 {
+    padding: 32px;
+}
+
+.p-8 {
+    padding: 8px;
+}
+
+.py-7 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-18 {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.py-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+
+.py-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.py-48 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.pb-48 {
+    padding-bottom: 48px;
+}
+
+.pb-24 {
+    padding-bottom: 24px;
+}
+
+.pe-8 {
+    padding-right: 8px;
+}
+
+.pe-24 {
+    padding-right: 24px;
+}
+
+.pe-40 {
+    padding-right: 40px;
+}
+
+.pe-48 {
+    padding-right: 48px;
+}
+
+
+@media(max-width: 767px) {
+    .p-md-24 {
+        padding: 24px;
+    }
+
+    .px-md-12 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .py-md-12 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .py-md-32 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .pb-md-32 {
+        padding-bottom: 32px;
+    }
+
+
+}
+
+@media(max-width: 576px) {
+    .px-sm-12 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .py-sm-12 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .py-sm-32 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+}
+
+.me-12 {
+    margin-right: 12px;
+}
+
+.me-8 {
+    margin-right: 8px;
+}
+
+.me-40 {
+    margin-right: 40px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+@media(max-width:767px) {
+    .mb-md-12 {
+        margin-bottom: 12px;
+    }
+
+
+    .mb-md-16 {
+        margin-bottom: 16px;
+    }
+
+    .mb-md-24 {
+        margin-bottom: 24px;
+    }
+
+    .mb-md-32 {
+        margin-bottom: 32px;
+    }
+
+
+
+
+}
+
+@media(max-width:576px) {
+    .me-sm-0 {
+        margin-right: 0;
+    }
+
+    .pe-sm-0{
+        padding: 0;
+    }
+
+    .pe-sm-16 {
+        padding-right: 16px;
+    }
+
+    .me-sm-16 {
+        margin-right: 16px;
+    }
+
+    .mb-sm-4 {
+        margin-bottom: 4px;
+    }
+
+    .mb-sm-8 {
+        margin-bottom: 8px;
+    }
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+/* 隱藏元素 */
+.d-none {
+    display: none;
+}
+
+@media(max-width:767px) {
+    .d-md-block {
+        display: block;
+    }
+
+    .d-md-none {
+        display: none;
+    }
+}
+
+
+@media(max-width:576px) {
+    .d-sm-block {
+        display: block;
+    }
+
+    .d-sm-none {
+        display: none;
+    }
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+
+.container {
+    /* max-width: 1296px; */
+    /* 1920-312(左留白)-312(右留白)=1296 */
+    max-width: 1320px;
+    /* 1296+12(左邊padding)+12(右邊padding)=1320 */
+    margin: 0 auto;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media(max-width:576px) {
+    .footer .container {
+        text-align: start;
+    }
+}
+
+.SectionButtonLine {
+    border-bottom: 1px solid var(--color-Neutral-300);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+
+}
+
+.col-1 {
+    width: calc(100%/12*1);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-2 {
+    width: calc(100%/12*2);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-3 {
+    width: calc(100%/12*3);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-4 {
+    width: calc(100%/12*4);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-5 {
+    width: calc(100%/12*5);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-6 {
+    width: calc(100%/12*6);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-7 {
+    width: calc(100%/12*7);
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-8 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*8);
+}
+
+.col-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*10);
+}
+
+@media(max-width:767px) {
+    .row {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    .col-md-1 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: calc(100%/4*1);
+    }
+
+    .col-md-2 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: calc(100%/4*2);
+    }
+
+    .col-md-3 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: calc(100%/4*3);
+    }
+
+    .col-md-4 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: calc(100%/4*4);
+    }
+
+}
+
+
+.nav-link-text {
+    color: var(--color-Neutral-900);
+}
+
+.nav-icon-text {
+    color: var(--color-Neutral-900);
+}
+
+/* 元件 */
+.btn {
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+@media(max-width:576px) {
+    .btn {
+        padding: 8px 16px;
+    }
+}
+
+.btn-dark {
+    background-color: var(--color-Neutral-900);
+    color: var(--color-Neutral-0);
+}
+
+.btn-light {
+    border: 1px solid var(--color-Neutral-900);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '/';
+    padding: 0 12px;
+}
