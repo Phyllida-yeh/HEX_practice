@@ -420,6 +420,30 @@ p {
     letter-spacing: 0.05em;
 }
 
+.container {
+    /* max-width: 1296px; */
+    /* 1920-312(左留白)-312(右留白)=1296 */
+    max-width: 1320px;
+    /* 1296+12(左邊padding)+12(右邊padding)=1320 */
+    margin: 0 auto;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.copyright{
+    padding-top: 32px;
+}
+
+@media(max-width:576px) {
+    .footer .container nav {
+        text-align: start;
+    }
+}
+
 .p-12 {
     padding: 12px;
 }
@@ -518,6 +542,11 @@ p {
         padding-bottom: 12px;
     }
 
+    .py-md-16 {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
     .py-md-32 {
         padding-top: 32px;
         padding-bottom: 32px;
@@ -542,8 +571,8 @@ p {
     }
 
     .py-sm-32 {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
 }
@@ -593,6 +622,14 @@ p {
 }
 
 @media(max-width:767px) {
+    .mb-md-0 {
+        margin-bottom: 0px;
+    }
+
+    .mb-md-8 {
+        margin-bottom: 8px;
+    }
+
     .mb-md-12 {
         margin-bottom: 12px;
     }
@@ -620,7 +657,7 @@ p {
         margin-right: 0;
     }
 
-    .pe-sm-0{
+    .pe-sm-0 {
         padding: 0;
     }
 
@@ -694,30 +731,15 @@ p {
     gap: 8px;
 }
 
-
-.container {
-    /* max-width: 1296px; */
-    /* 1920-312(左留白)-312(右留白)=1296 */
-    max-width: 1320px;
-    /* 1296+12(左邊padding)+12(右邊padding)=1320 */
-    margin: 0 auto;
-    padding-right: 12px;
-    padding-left: 12px;
-}
-
-.footer {
-    text-align: center;
-}
-
-@media(max-width:576px) {
-    .footer .container {
-        text-align: start;
-    }
-}
-
 .SectionButtonLine {
     border-bottom: 1px solid var(--color-Neutral-300);
 }
+
+.SectionTopLine {
+    border-top: 1px solid var(--color-Neutral-300);
+}
+
+
 
 .row {
     display: flex;
@@ -849,7 +871,26 @@ p {
     border: 1px solid var(--color-Neutral-900);
 }
 
+.breadcrumb-item {
+    font-weight: 500;
+}
+
+
+
 .breadcrumb-item+.breadcrumb-item::before {
     content: '/';
     padding: 0 12px;
+}
+
+@media(max-width:767px) {
+    .breadcrumb-item+.breadcrumb-item::before {
+        padding: 0 8px;
+
+    }
+
+    .breadcrumb-item {
+        font-size: 14px;
+    }
+
+
 }
