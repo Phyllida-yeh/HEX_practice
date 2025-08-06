@@ -6,4 +6,8 @@
 @import 'base.css';
 @import 'utils.css';
 @import 'components.css';
-@import 'layout';
+@import 'layout.css';
+
+@import 'product-detail.css';
+@import 'product-list.css';
+@import 'story.css';
